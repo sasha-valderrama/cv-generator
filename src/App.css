@@ -1,0 +1,144 @@
+:root {
+  /**************/
+  /*   TOKENS   */
+  /**************/
+  --color-black: rgb(0, 0, 0);
+  --color-white: rgb(255, 255, 255);
+  --color-accent: rgb(237, 184, 53);
+  --font-size-xs: 0.4rem;
+  --font-size-sm: 0.8rem;
+  --font-size-md: 1.2rem;
+  --font-size-lg: 1.6rem;
+  --font-size-xl: 1.8rem;
+  /**************/
+  /*   HEADER   */
+  /**************/
+  --header-height: 4rem;
+  --header-color: var(--color-white);
+  --header-bg: var(--color-black);
+  /**************/
+  /*    MAIN    */
+  /**************/
+  --main-bg: rgb(65, 10, 148);
+  /**************/
+  /*   FOOTER   */
+  /**************/
+  --footer-height: 1.8rem;
+  --footer-color: var(--color-white);
+  --footer-bg: var(--color-black);
+}
+
+@font-face {
+  font-family: 'Alegreya Sans';
+  src: url(./assets/fonts/alegreya_sans/AlegreyaSans-Thin.otf)
+    format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Alegreya Sans';
+  src: url(./assets/fonts/alegreya_sans/AlegreyaSans-Regular.otf)
+    format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Alegreya Sans';
+  src: url(./assets/fonts/alegreya_sans/AlegreyaSans-Regular.otf)
+    format('opentype');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Alegreya Sans';
+  src: url(./assets/fonts/alegreya_sans/AlegreyaSans-BlackItalic.otf)
+    format('opentype');
+  font-weight: bold;
+  font-style: italic;
+}
+
+.header {
+  height: var(--header-height);
+  color: var(--header-color);
+  background-color: var(--header-bg);
+  padding: 2rem 1rem;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 1rem;
+}
+
+.header-title {
+  position: relative;
+  z-index: 1;
+  font-weight: bold;
+  font-size: var(--font-size-lg);
+  font-family: 'Alegreya Sans';
+  font-weight: normal;
+  font-style: normal;
+}
+
+.header-title-span {
+  font-size: var(--font-size-xl);
+  font-weight: bold;
+  font-style: italic;
+}
+
+.main-page {
+  background-color: var(--main-bg);
+  background-image: url(./assets/fonts/images/bg_pencils.jpg);
+  background-size: cover;
+  height: calc(100vh - var(--header-height) - var(--footer-height));
+  /* height: calc(100% - var(--header-height)); */
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; */
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem; */
+}
+
+.normal-page {
+  background-color: aqua;
+  height: fit-content;
+}
+
+.svg-content {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.svg-container {
+  width: 3rem;
+  height: 3rem;
+  background-color: var(--color-accent);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.instructions {
+  color: var(--color-white);
+  width: fit-content;
+  padding: 1rem;
+  font-family: 'Alegreya Sans';
+  font-weight: 400;
+  font-style: normal;
+}
+
+.footer {
+  height: var(--footer-height);
+  background-color: var(--footer-bg);
+  color: var(--footer-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: var(--font-size-sm);
+}
