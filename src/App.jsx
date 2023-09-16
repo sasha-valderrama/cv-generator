@@ -7,13 +7,13 @@ import {
 import './App.css'
 import Root from './components/Root'
 import Instructions from './components/Instructions'
-import Form from './components/Form'
+import Main from './components/Main'
 
 const appRouter = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<Root />}>
       <Route index element={<Instructions />} />
-      <Route path="/form" element={<Form />} />
+      <Route path="/form" element={<Main/>} />
     </Route>
   )
 )

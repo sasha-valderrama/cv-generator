@@ -87,7 +87,7 @@
   font-style: italic;
 }
 
-.main-page {
+.root-page {
   background-color: var(--main-bg);
   background-image: url(./assets/fonts/images/bg_pencils.jpg);
   background-size: cover;
@@ -102,11 +102,6 @@
   justify-content: center;
   align-items: center;
   gap: 3rem; */
-}
-
-.normal-page {
-  background-color: aqua;
-  height: fit-content;
 }
 
 .svg-content {
@@ -141,4 +136,54 @@
   justify-content: center;
   align-items: center;
   font-size: var(--font-size-sm);
+}
+
+/**********************/
+/*****   MAIN   *******/
+/**********************/
+
+/* .main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  outline: 1px solid red;
+} */
+
+.main-page {
+  background-color: var(--color-accent);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.fillArea-container {
+  /* margin: 2rem; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  /* gap: 2rem; */
+  /* background-color: blueviolet; */
+}
+
+.preview-container {
+  /* margin: 2rem; */
+  background-color: antiquewhite;
+  min-width: 304px;
+  /* width: 500px; */
+  height: 900px;
+}
+
+.fillArea-section {
+  min-width: 304px;
+  /* width: 500px; */
+  padding: 25px;
+  background-color: bisque;
+  border-radius: 25px;
 }

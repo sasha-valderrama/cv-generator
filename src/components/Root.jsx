@@ -7,7 +7,7 @@ export default function Root() {
   return (
     <>
       <Header />
-      <div className={pathname === '/' ? 'main-page' : 'normal-page'}>
+      <div className={pathname === '/' ? 'root-page' : 'main-page'}>
         <Outlet />
       </div>
       <Footer />
