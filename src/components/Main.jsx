@@ -1,11 +1,11 @@
-import FillArea from './FillArea'
-import Preview from './Preview'
+import CVForm from './CVForm'
+import CVPreview from './CVPreview'
 
 export default function Main() {
   return (
     <div className="main-page">
-      <FillArea />
-      <Preview />
+      <CVForm />
+      <CVPreview />
     </div>
   )
 }

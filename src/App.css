@@ -161,29 +161,23 @@
   padding: 2rem;
 }
 
-.fillArea-container {
-  /* margin: 2rem; */
+.CVForm-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 1rem;
-  /* gap: 2rem; */
-  /* background-color: blueviolet; */
+}
+
+.section-container {
+  min-width: 304px;
+  padding: 0.7rem;
+  background-color: bisque;
+  border-radius: 0.75rem;
 }
 
 .preview-container {
-  /* margin: 2rem; */
   background-color: antiquewhite;
   min-width: 304px;
-  /* width: 500px; */
   height: 900px;
-}
-
-.fillArea-section {
-  min-width: 304px;
-  /* width: 500px; */
-  padding: 25px;
-  background-color: bisque;
-  border-radius: 25px;
 }
